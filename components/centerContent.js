@@ -1,5 +1,3 @@
-import './centerContent.css'
-
 class CenterContent extends HTMLElement {
     constructor(child) {
         super()

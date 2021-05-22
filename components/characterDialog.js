@@ -1,5 +1,4 @@
 import { Character, Side } from '../consts.js'
-import './characterDialog.css'
 
 
 class CharacterDialog extends HTMLElement {

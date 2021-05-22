@@ -1,5 +1,3 @@
-import './jokesScreen.css'
-
 import CenterContent from './centerContent.js'
 
 

@@ -1,5 +1,3 @@
-import './typewriter.css'
-
 class Typewriter extends HTMLElement {
     constructor(string, { onstarttyping, onstoptyping, onfinished, onhidden }) {
         super()
