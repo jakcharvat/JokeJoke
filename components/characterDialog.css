@@ -1,0 +1,159 @@
+character-dialog {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+character-dialog bottom-aligned-row {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+
+character-dialog bottom-aligned-row.press-space-container {
+    position: absolute;
+    left: 0;
+    top: 0;
+    justify-content: center;
+    font-size: 1.2rem;
+    font-family: 'Recursive', sans-serif;
+}
+
+
+press-space {
+    --bg: rgba(0, 0, 0, 0.1);
+    --strk: rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+}
+
+@media (prefers-color-scheme: dark) {
+    press-space {
+        --bg: rgba(255, 255, 255, 0.1);
+        --strk: rgba(255, 255, 255, 0.3);
+    }
+}
+
+press-space p {
+    margin: 12px;
+}
+
+press-space, press-space span {
+    background: var(--bg);
+    border: 2px solid var(--strk);
+}
+
+press-space span {
+    padding: 3px;
+    border-radius: 5px;
+}
+
+
+character-dialog character-container {
+    --size: 200px;
+    width: var(--size);
+    height: var(--size);
+    position: relative;
+}
+
+
+character-dialog character-container>img {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+
+character-dialog message-bubble {
+    --x-offset: calc(var(--size) + 30px);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+character-dialog message-bubble.left {
+    left: var(--x-offset);
+}
+
+character-dialog message-bubble.right {
+    right: var(--x-offset);
+}
+
+
+character-dialog {
+    --bg: #FCFEAD;
+    --strk: #100B25;
+    --uname: #2e3cb8;
+}
+
+@media (prefers-color-scheme: dark) {
+    character-dialog {
+        --bg: #100B25;
+        --strk: #FCFEAD;
+        --uname: #7682ec;
+    }
+}
+
+character-dialog message-bubble .bubble {
+    width: auto;
+    height: auto;
+    background: var(--bg);
+    border: 5px solid var(--strk);
+    border-radius: 20px;
+    padding: 12px;
+    width: max-content;
+    max-width: 300px;
+}
+
+
+character-dialog message-bubble .bubble::before {
+    --size: 30px;
+    content: '';
+    position: absolute;
+    width: var(--size);
+    height: var(--size);
+    transform: translate(-50%, -50%) rotate(45deg);
+    border-radius: 8px;
+    top: 50%;
+    background: var(--strk);
+    z-index: -1;
+}
+
+character-dialog message-bubble.right .bubble::before {
+    left: 100%;
+}
+
+character-dialog message-bubble.left .bubble::before {
+    left: 0%;
+}
+
+
+character-dialog message-bubble .text-container {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+character-dialog message-bubble .text-container p {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    cursor: default;
+}
+
+character-dialog message-bubble span.username {
+    color: var(--uname);
+    font-weight: 700;
+}

@@ -1,0 +1,77 @@
+jokes-screen {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    overflow: scroll;
+
+    --bg: rgba(0, 0, 0, 0.1);
+    --strk: rgba(0, 0, 0, 0.3);
+}
+
+@media (prefers-color-scheme: dark) {
+    jokes-screen {
+        --bg: rgba(255, 255, 255, 0.1);
+        --strk: rgba(255, 255, 255, 0.3);
+    }
+}
+
+jokes-screen center-content {
+    flex-direction: column;
+}
+
+
+jokes-options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    padding: 30px;
+}
+
+jokes-options, joke-display {
+    background: var(--bg);
+    border: 2px var(--strk) solid;
+    border-radius: 10px;
+    margin: 20px 40px;
+}
+
+jokes-dropdown, jokes-toggle, jokes-button {
+    padding: 3px;
+}
+
+jokes-dropdown label, jokes-dropdown select, jokes-toggle label, jokes-toggle input {
+    display: inline-block;
+    width: 150px;
+}
+
+jokes-options option, jokes-options select, jokes-options label, jokes-options button {
+    font-size: 1rem;
+    font-family: 'Recursive', sans-serif;
+}
+
+jokes-options p {
+    font-family: 'Recursive', sans-serif;
+    font-size: 0.6rem;
+}
+
+joke-display p {
+    font-family: 'Recursive', sans-serif;
+    font-size: 1.3rem;
+    padding: 20px;
+    margin: 0;
+}
+
+
+jokes-error p {
+    margin: 0;
+    margin-top: 20px;
+    color: salmon;
+    font-size: 1rem;
+}

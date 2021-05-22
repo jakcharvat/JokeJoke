@@ -1,0 +1,38 @@
+// left image is shouting
+// right image is me
+// Time in milliseconds
+LEFT_IMG:shouting
+WAIT:200
+LEFT_TXT:hey!
+LEFT_TXT:hey <@jakcharvat>!
+RIGHT_IMG:confused
+RIGHT_TXT:what's up?
+LEFT_IMG:traffic-light
+LEFT_TXT:STOP!
+LEFT_TXT:what do u think ur doing?
+RIGHT_IMG:clown
+RIGHT_TXT:telling a joke
+LEFT_IMG:spitting-coffee
+WAIT:2000
+LEFT_IMG:not-cool
+LEFT_TXT:who do u think u r?
+LEFT_TXT:i'll tell u...
+LEFT_TXT:A PROGRAMMER!
+RIGHT_TXT:and?
+LEFT_TXT:who do u think ur kidding?
+RIGHT_IMG:sad
+LEFT_TXT:u can't tell a joke...
+LEFT_TXT:u can code but ur not funny
+RIGHT_IMG:thinking
+WAIT:2000
+RIGHT_IMG:idea
+RIGHT_TXT:i have an idea
+RIGHT_TXT:i'll do what i do best
+LEFT_IMG:confused
+RIGHT_TXT:as a programmer...
+RIGHT_IMG:stealing-money
+RIGHT_TXT:STEAL!
+RIGHT_IMG:flying-rocket
+RIGHT_TXT:erm, sorry, i meant "make educated and fully credited use of a public API"
+RIGHT_TXT:here u go
+
