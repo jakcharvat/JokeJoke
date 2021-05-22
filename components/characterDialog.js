@@ -1,4 +1,4 @@
-import { Character, Side } from '../consts'
+import { Character, Side } from '../consts.js'
 import './characterDialog.css'
 
 

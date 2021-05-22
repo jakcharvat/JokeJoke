@@ -1,5 +1,5 @@
-import CenterContent from './centerContent'
-import CharacterDialog from './characterDialog'
+import CenterContent from './centerContent.js'
+import CharacterDialog from './characterDialog.js'
 import './initialPage.css'
 import Typewriter from './typewriter.js'
 
